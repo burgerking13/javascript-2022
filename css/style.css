@@ -1,3 +1,197 @@
+/* COMMON */
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'KyoboHand';
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+
+#clock, #weather,
+#login-form , #todo-form {
+    text-align: center;
+}
+
+input {
+    width:220px;
+    height:20px;
+    font-size:16px;
+    padding: 4px;
+    border: 2px solid #535353;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+  }
+  
+/* WEATHER SECTION */
+#weather {
+    margin-top: 10px;
+}
+
+/* HIDDEN */
 .hidden {
     display: none;
+}
+
+/* DINO SECTION */
+#dinogif, #dino2 {
+    top: 160px;
+    left: 270px;
+    position: absolute;
+    z-index: 2;
+}
+
+#dinodowngif {
+    top: 195px;
+    left: 260px;
+    position: absolute;
+    z-index: 2;
+}
+
+/* TODO SECTION */
+#todo-section {
+    top: 241px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 504px;
+    height: 300px;
+    border: 2px solid #535353;
+    border-top: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+}
+
+#addbtn {
+    background-color: #535353;
+    color: #fff;
+    height: 32px;
+    width: 48px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    padding-bottom: 4px;
+}
+
+#todo-section h3 {
+    margin-top: 30px;
+}
+
+/* BG SECTION */
+#background {
+    margin: 0 auto;
+    top: 140px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 120px;
+    position: absolute;
+}
+
+#background div {
+    width: 500px;
+    height: 120px;
+    position: absolute;
+    z-index: 1;
+    animation: infiniteScrollBg 10s linear infinite;
+}
+
+  @keyframes infiniteScrollBg {
+    0% {
+        background-position: 0px 0%;
+    }
+    100% {
+        background-position: -2399px 0%;
+    }
+}
+
+/* QUOTE SECTION */
+#dino {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: -230px;
+    left: -230px;
+    margin: auto;
+}
+
+#dino:hover {
+    cursor: pointer;
+  }
+
+#click {
+    font-size: 12px;
+    position: absolute;
+    top: -90px;
+    left: 0px;
+}
+
+#click2 {
+    font-size: 12px;
+    position: absolute;
+    top: 235px;
+    left: 380px;
+}
+
+/* PLAY MUSIC */
+#music-note {
+    width: 30px;
+    position: absolute;
+    top: 240px;
+    left: 430px;
+}
+
+#music-note:hover {
+    cursor: pointer;
+}
+
+.info {
+    margin: 0 auto;
+    top: 310px;
+    bottom: 0;
+    left: -2px;
+    right: 0;
+    width: 504px;
+    height: 88px;
+    position: absolute;
+    border: 2px solid #535353;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #535353;
+    background-color: #fff;
+}
+
+.info p {
+    color: #8f8f8f;
 }
